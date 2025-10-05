@@ -1,4 +1,4 @@
-name: sentinelscan
+name: ubuntuguard
 base: core24
 version: '0.2.0'
 summary: Ubuntu-first Linux security scanner (pretty output + JSON)
@@ -12,7 +12,7 @@ confinement: classic
 license: Apache-2.0
 
 apps:
-  sentinelscan:
+  ubuntuguard:
     command: bin/ubuntuguard
 
 parts:
