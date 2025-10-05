@@ -1,6 +1,6 @@
-name: ubuntuguard
+name: sentinelscan
 base: core24
-version: '0.2.0'
+version: '0.2.1'
 summary: Ubuntu-first Linux security scanner (pretty output + JSON)
 description: |
   UbuntuGuard scans common misconfigurations on Ubuntu: packages, firewall,
@@ -10,9 +10,13 @@ description: |
 grade: stable
 confinement: classic
 license: Apache-2.0
+website: https://github.com/shashank381/sentinelscan
+source-code: https://github.com/shashank381/sentinelscan
+issues: https://github.com/shashank381/sentinelscan/issues
+contact: mailto:satholashashank43@gmail.com
 
 apps:
-  ubuntuguard:
+  sentinelscan:
     command: bin/ubuntuguard
 
 parts:
