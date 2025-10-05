@@ -1,0 +1,6 @@
+.venv/
+parts/
+prime/
+stage/
+__pycache__/
+*.snap
