@@ -4,10 +4,12 @@ version: '0.2.0'
 summary: Ubuntu-first Linux security scanner (pretty output + JSON)
 description: |
   UbuntuGuard scans common misconfigurations on Ubuntu: packages, firewall,
-  listeners, SSH hardening, SUID/SGID, world-writable paths, SUID/SGID,
-  and security-updates count. Pretty output + JSON for CI.
+  listeners, SSH hardening, SUID/SGID, world-writable paths, and security updates.
+  Pretty output + JSON for CI. Read-only: makes no changes.
+
 grade: stable
 confinement: classic
+license: Apache-2.0
 
 apps:
   sentinelscan:
@@ -20,9 +22,3 @@ parts:
     override-build: |
       mkdir -p "$CRAFT_PART_INSTALL/bin"
       install -m 0755 security_scanner.py "$CRAFT_PART_INSTALL/bin/ubuntuguard"
-    stage-packages:
-      - python3
-      - iproute2
-      - ufw
-      - openssh-client
-      - lsb-release
