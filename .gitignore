@@ -1,6 +1,16 @@
-.venv/
+# Snapcraft build outputs
 parts/
 prime/
 stage/
-__pycache__/
 *.snap
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
